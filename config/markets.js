@@ -3,7 +3,7 @@ export default [{
 	flag: "AU",
 	country: "Australia",
 	url: "https://www.amazon.com.au",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -12,7 +12,7 @@ export default [{
 	flag: "BR",
 	country: "Brazil",
 	url: "https://www.amazon.com.br",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -21,7 +21,7 @@ export default [{
 	flag: "CA",
 	country: "Canada",
 	url: "https://www.amazon.ca",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -30,7 +30,7 @@ export default [{
 	flag: "CN",
 	country: "China",
 	url: "https://www.amazon.cn",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -39,7 +39,7 @@ export default [{
 	flag: "FR",
 	country: "France",
 	url: "https://www.amazon.fr",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -48,7 +48,7 @@ export default [{
 	flag: "DE",
 	country: "Germany",
 	url: "https://www.amazon.de",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -57,7 +57,7 @@ export default [{
 	flag: "IN",
 	country: "India",
 	url: "https://www.amazon.in",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -66,7 +66,7 @@ export default [{
 	flag: "IT",
 	country: "Italy",
 	url: "https://www.amazon.it",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -75,7 +75,7 @@ export default [{
 	flag: "JP",
 	country: "Japan",
 	url: "https://www.amazon.co.jp",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -84,7 +84,7 @@ export default [{
 	flag: "MX",
 	country: "Mexico",
 	url: "https://www.amazon.com.mx",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -93,7 +93,7 @@ export default [{
 	flag: "ES",
 	country: "Spain",
 	url: "https://www.amazon.es",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -102,7 +102,7 @@ export default [{
 	flag: "TR",
 	country: "Turkey",
 	url: "https://www.amazon.com.tr",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -111,7 +111,7 @@ export default [{
 	flag: "GB",
 	country: "United Kingdom",
 	url: "https://www.amazon.co.uk",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}
@@ -120,7 +120,7 @@ export default [{
 	flag: "US",
 	country: "United States",
 	url: "https://www.amazon.com",
-	defaultConfig: {
+	config: {
 		enabled: true,
 		tag: 'amzsharer-21',
 	}

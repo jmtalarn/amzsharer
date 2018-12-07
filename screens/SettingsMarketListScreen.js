@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, View, Text, FlatList } from 'react-native';
 import Styles from '../styles'
 import Markets from '../config/markets';
-import SettingsMarketItemList from '../components/SettingsMarketItemList';
+import MarketItemList from '../components/MarketItemList';
 
 export default class SettingsMarketListScreen extends React.Component {
 	static navigationOptions = ({ navigation }) => {
@@ -22,9 +22,9 @@ export default class SettingsMarketListScreen extends React.Component {
 					<FlatList
 						data={Markets}
 						renderItem={({ item }, index) => (
-							<SettingsMarketItemList
+							<MarketItemList
 								market={item}
-								goToMarket={
+								action={
 									() => {
 										this.props.navigation.push('SettingsMarket', { market: item });
 									}

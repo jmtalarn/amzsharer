@@ -6,7 +6,7 @@ import {
 	createSwitchNavigator
 } from "react-navigation";
 import {
-	SharingScreen,
+	SharingListScreen,
 	SettingsMarketListScreen,
 	SettingsMarketScreen,
 } from '../screens'
@@ -35,7 +35,11 @@ SettingsStack.navigationOptions =
 
 const SharingStack = createStackNavigator(
 	{
-		Settings: SharingScreen,
+		SharingList: SharingListScreen,
+	},
+	{
+		initialRouteName: "SharingList",
+
 	}
 );
 SharingStack.navigationOptions =

@@ -4,14 +4,14 @@ import Flag from 'react-native-flags';
 import Styles from '../styles'
 
 
-export default class SettingsMarketItemList extends React.Component {
+export default class MarketItemList extends React.Component {
 
 	render() {
 		const { market } = this.props;
 		return (
 			<TouchableOpacity
 				onPress={
-					() => { this.props.goToMarket() }
+					() => { this.props.action() }
 				}
 			>
 				<View

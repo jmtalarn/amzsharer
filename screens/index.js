@@ -1,4 +1,4 @@
 export SettingsMarketListScreen from './SettingsMarketListScreen';
-export SharingScreen from './SharingScreen';
+export SharingListScreen from './SharingListScreen';
 export SettingsMarketScreen from './SettingsMarketScreen';
 

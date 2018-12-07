@@ -13,7 +13,7 @@ export default class SettingsMarketScreen extends React.Component {
 	constructor(props) {
 		super(props);
 		const market = props.navigation.getParam('market');
-		this.state = Object.assign({}, { market }, { marketConfig: market.defaultConfig });
+		this.state = Object.assign({}, { market }, { marketConfig: market.config });
 		this._retrieveData(market);
 	}
 	saveData = () => {
@@ -24,7 +24,6 @@ export default class SettingsMarketScreen extends React.Component {
 		const key = this.state.market.key;
 		try {
 			await AsyncStorage.setItem(`MARKET_${key}`, JSON.stringify(this.state.marketConfig));
-			const value = await AsyncStorage.getItem(`MARKET_${key}`);
 		} catch (error) {
 			// Error saving data
 			console.error(error);
