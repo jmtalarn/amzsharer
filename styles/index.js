@@ -5,4 +5,11 @@ export default StyleSheet.create({
 		flex: 1,
 		backgroundColor: '#fff',
 	},
+	SettingsMarket: {
+		padding: 10,
+		flexDirection: 'row',
+	},
+	SettingsMarketDescription: {
+		marginLeft: 20,
+	}
 });

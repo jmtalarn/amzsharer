@@ -1,60 +1,71 @@
-export default {
-	"au": {
-		country: "Australia",
-		url: "https://www.amazon.com.au"
-	},
-	"br": {
-		country: "Brazil",
-		url: "https://www.amazon.com.br"
-	},
-	"ca": {
-		country: "Canada",
-		url: "https://www.amazon.ca"
-	},
-	"cn": {
-		country: "China",
-		url: "https://www.amazon.cn"
-	},
-	"fr": {
-		country: "France",
-		url: "https://www.amazon.fr"
-	},
-	"de": {
-		country: "Germany",
-		url: "https://www.amazon.de"
-	},
-	"in": {
-		country: "India",
-		url: "https://www.amazon.in"
-	},
-	"it": {
-		country: "Italy",
-		url: "https://www.amazon.it"
-	},
-	"jp": {
-		country: "Japan",
-		url: "https://www.amazon.co.jp"
-	},
-	"mx": {
-		country: "Mexico",
-		url: "https://www.amazon.com.mx"
-	},
-	"es": {
-		country: "Spain",
-		url: "https://www.amazon.es"
-	},
-	"tr": {
-		country: "Turkey",
-		url: "https://www.amazon.com.tr"
-	},
-	"uk": {
-		country: "United Kingdom",
-		url: "https://www.amazon.co.uk"
-	},
-	"com": {
-		country: "United States",
-		url: "https://www.amazon.com"
-	},
-
-
-}
+export default [{
+	key: "au",
+	flag: "AU",
+	country: "Australia",
+	url: "https://www.amazon.com.au"
+}, {
+	key: "br",
+	flag: "BR",
+	country: "Brazil",
+	url: "https://www.amazon.com.br"
+}, {
+	key: "ca",
+	flag: "CA",
+	country: "Canada",
+	url: "https://www.amazon.ca"
+}, {
+	key: "cn",
+	flag: "CN",
+	country: "China",
+	url: "https://www.amazon.cn"
+}, {
+	key: "fr",
+	flag: "FR",
+	country: "France",
+	url: "https://www.amazon.fr"
+}, {
+	key: "de",
+	flag: "DE",
+	country: "Germany",
+	url: "https://www.amazon.de"
+}, {
+	key: "in",
+	flag: "IN",
+	country: "India",
+	url: "https://www.amazon.in"
+}, {
+	key: "it",
+	flag: "IT",
+	country: "Italy",
+	url: "https://www.amazon.it"
+}, {
+	key: "jp",
+	flag: "JP",
+	country: "Japan",
+	url: "https://www.amazon.co.jp"
+}, {
+	key: "mx",
+	flag: "MX",
+	country: "Mexico",
+	url: "https://www.amazon.com.mx"
+}, {
+	key: "es",
+	flag: "ES",
+	country: "Spain",
+	url: "https://www.amazon.es"
+}, {
+	key: "tr",
+	flag: "TR",
+	country: "Turkey",
+	url: "https://www.amazon.com.tr"
+}, {
+	key: "uk",
+	flag: "GB",
+	country: "United Kingdom",
+	url: "https://www.amazon.co.uk"
+}, {
+	key: "com",
+	flag: "US",
+	country: "United States",
+	url: "https://www.amazon.com"
+}];

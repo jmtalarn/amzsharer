@@ -1,6 +1,8 @@
 import React from 'react';
-import { Button, View, Text } from 'react-native';
+import { Button, View, Text, FlatList } from 'react-native';
 import Styles from '../styles'
+import Markets from '../config/markets';
+import SettingsMarket from '../components/SettingsMarket';
 
 export default class SettingsScreen extends React.Component {
 	static navigationOptions = ({ navigation }) => {
@@ -16,6 +18,18 @@ export default class SettingsScreen extends React.Component {
 				<Text>
 					Settings Screen
 				</Text>
+				<View>
+					<FlatList
+						data={Markets}
+						renderItem={({ item }, index) => (
+							<SettingsMarket
+								market={item}
+							/>
+						)}
+						keyExtractor={item => item.key}
+					/>
+
+				</View>
 			</View>
 		);
 	}
