@@ -9,7 +9,11 @@ export default class SettingsMarketItemList extends React.Component {
 	render() {
 		const { market } = this.props;
 		return (
-			<TouchableOpacity>
+			<TouchableOpacity
+				onPress={
+					() => { this.props.goToMarket() }
+				}
+			>
 				<View
 					style={Styles.SettingsMarket}
 				>
@@ -17,13 +21,13 @@ export default class SettingsMarketItemList extends React.Component {
 						code={market.flag}
 						size={32}
 					/>
-					<View style={Styles.SettingsMarketDescription}>
+					<View style={Styles.SettingsMarginOnLabel}>
 						<Text>{market.country}</Text>
 						<Text>{market.url}</Text>
 					</View>
 
 				</View>
-			</TouchableOpacity>
+			</TouchableOpacity >
 		);
 	}
 }

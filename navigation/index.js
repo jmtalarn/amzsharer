@@ -7,12 +7,18 @@ import {
 } from "react-navigation";
 import {
 	SharingScreen,
-	SettingsScreen,
+	SettingsMarketListScreen,
+	SettingsMarketScreen,
 } from '../screens'
 
 const SettingsStack = createStackNavigator(
 	{
-		Settings: SettingsScreen,
+		SettingsMarketList: SettingsMarketListScreen,
+		SettingsMarket: SettingsMarketScreen,
+	},
+	{
+		initialRouteName: "SettingsMarketList",
+
 	});
 SettingsStack.navigationOptions =
 	{
