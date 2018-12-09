@@ -2,7 +2,7 @@ import * as ActionTypes from '../actions/markets/types';
 import Markets from '../../config/markets';
 
 const initialState = {
-  markets: Markets,
+  list: Markets,
 };
 
 function marketsReducer(state = initialState, action) {
@@ -12,12 +12,13 @@ function marketsReducer(state = initialState, action) {
         {},
         state,
         {
-          markets: markets
+          list: Markets
             .map(
               market => {
                 if (market.key === action.key) {
                   market.config = action.config
                 }
+                return market;
               }
             )
         }

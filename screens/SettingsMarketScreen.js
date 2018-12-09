@@ -2,8 +2,10 @@ import React from 'react';
 import { Button, View, Text, Switch, TextInput, AsyncStorage } from 'react-native';
 import Flag from 'react-native-flags';
 import Styles from '../styles'
+import { connect } from 'react-redux';
+import { updateMarketConfig } from '../redux/actions/markets';
 
-export default class SettingsMarketScreen extends React.Component {
+class SettingsMarketScreen extends React.Component {
   static navigationOptions = ({ navigation }) => {
     const market = navigation.getParam('market');
     return {
@@ -14,30 +16,10 @@ export default class SettingsMarketScreen extends React.Component {
     super(props);
     const market = props.navigation.getParam('market');
     this.state = Object.assign({}, { market }, { marketConfig: market.config });
-    this._retrieveData(market);
   }
   saveData = () => {
-    this._storeData();
+    this.props.updateMarketConfig(this.state.market.key, this.state.market.config);
     this.props.navigation.goBack();
-  }
-  _storeData = async () => {
-    const key = this.state.market.key;
-    try {
-      await AsyncStorage.setItem(`MARKET_${key}`, JSON.stringify(this.state.marketConfig));
-    } catch (error) {
-      // Error saving data
-      console.error(error);
-    }
-  }
-  _retrieveData = async (market) => {
-    try {
-      const value = await AsyncStorage.getItem(`MARKET_${market.key}`);
-      if (value !== null) {
-        this.setState({ marketConfig: JSON.parse(value) });
-      }
-    } catch (error) {
-      console.error(error);
-    }
   }
 
   render() {
@@ -97,3 +79,16 @@ export default class SettingsMarketScreen extends React.Component {
   }
 
 }
+
+const SettingsMarketDispatch = function (dispatch) {
+  return {
+    updateMarketConfig: (key, config) => {
+      dispatch(updateMarketConfig(key, config));
+    },
+  };
+};
+
+export default connect(
+  null,
+  SettingsMarketDispatch
+)(SettingsMarketScreen);
